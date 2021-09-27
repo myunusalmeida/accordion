@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #f9f7fc;
+  color: #544f64;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+}
+
+.accordion-container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: .75rem;
+  padding: 2rem 1rem;
+  background-color: #FFF;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+}
+
+.accordion-title {
+  font-size: 16px;
+  color: #2b1d53;
+  font-weight: 400;
+}
+
+.accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: .5rem;
+          column-gap: .5rem;
+  padding: 1.25rem 1.25rem 1.25rem 1rem;
+  cursor: pointer;
+}
+
+.accordion-description {
+  padding: 0 1.25rem 1.25rem 3rem;
+  font-size: 14px;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #2b1d53;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.accordion-item {
+  -webkit-box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
+          box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
+  background-color: #FFF;
+  border-radius: .25rem;
+  position: relative;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.accordion-item::after {
+  content: "";
+  background-color: #442e84;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .25rem 0 0 25rem;
+}
+
+.accordion-item:nth-child(1) {
+  background-color: #fff7f0;
+}
+
+.accordion-item:nth-child(1)::after {
+  background-color: #ffc08a;
+}
+
+.accordion-item:nth-child(2) {
+  background-color: #f0f0ff;
+}
+
+.accordion-item:nth-child(2)::after {
+  background-color: #8a8aff;
+}
+
+.accordion-item:nth-child(3) {
+  background-color: #fff0f3;
+}
+
+.accordion-item:nth-child(3)::after {
+  background-color: #ff8aa1;
+}
+
+.accordion-item:nth-child(4) {
+  background-color: #f0faff;
+}
+
+.accordion-item:nth-child(4)::after {
+  background-color: #8ad8ff;
+}
+
+.accordion-content {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+@media screen and (min-width: 576px) {
+  .accordion-container {
+    width: 550px;
+    padding: 2.5rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    border-radius: .75rem;
+  }
+  .accordion-header {
+    padding: 1.5rem;
+  }
+  .accordion-title {
+    padding-right: 3.5rem;
+  }
+  .accordion-description {
+    padding: 0 4rem 1.25rem 3.5rem;
+  }
+}
+
+.accordion-open .accordion-icon {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.accordion-open .accordion-title {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

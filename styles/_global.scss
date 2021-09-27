@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $primary_font;
+    font-size: $normal_font_size;
+    background-color: $body_color;
+    color: $text_color;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @media screen and (min-width: 576px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}

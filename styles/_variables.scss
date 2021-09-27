@@ -1,0 +1,12 @@
+$hue_color        : 255;
+
+$primary_color    : hsl($hue_color, 48%, 35%);
+$secondary_color  : hsl($hue_color, 48%, 22%);
+$text_color       : hsl($hue_color, 12%, 35%);
+$body_color       : hsl($hue_color, 48%, 98%);
+$container_color  : #FFF;
+
+$primary_font     : 'Poppins', sans-serif;
+
+$normal_font_size : 16px;
+$small_font_size  : 14px;
